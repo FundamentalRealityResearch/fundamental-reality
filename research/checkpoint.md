@@ -29,4 +29,4 @@ Foundational references (bibliographic starting points, not freshly audited here
 
 Construct a finite clock–system–record model with a stationary history state. Compare forward and reversed conditional histories; distinguish imposed boundary conditions from a derived arrow of time. Test whether record correlations select a direction, check recurrence, and distinguish clock labels from physical duration. Do not presume abstract quantum geometry equals physical spacetime.
 
-Audit reported AI-assisted breakthroughs against primary sources before using them as premises. No verified novel result yet; no executed computational test is claimed in this checkpoint.
+Audit reported AI-assisted breakthroughs against primary sources before using them as premises. No verified novel result yet. The clock calculation in section C has a reproducible symbolic test; no additional computational test is claimed here.
