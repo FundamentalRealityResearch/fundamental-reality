@@ -16,7 +16,7 @@ For U = exp(-i H Δt/ħ), rescaling H by λ > 0 and Δt by 1/λ leaves U invaria
 
 Let |Ψ> = (|00> + |11>)/sqrt(2), H_C = ħω Z/2 and H_S = -ħω Z/2 acting on distinct factors. The total Hamiltonian annihilates |Ψ>.
 
-Conditioning on the clock ray (|0> + exp(-iωt)|1>)/sqrt(2) yields the normalized system ray (|0> + exp(iωt)|1>)/sqrt(2), which evolves under H_S up to an overall phase. The earlier report used the opposite clock phase and incorrectly identified the resulting generator as H_S rather than -H_S. This sign correction leaves the following distance calculation intact.
+Conditioning on the clock ray (|0> + exp(iωt)|1>)/sqrt(2) yields the normalized system ray (|0> + exp(-iωt)|1>)/sqrt(2), which evolves under H_S up to an overall phase. Indeed, H_S has eigenvalues -ħω/2 on |0> and +ħω/2 on |1>, so exp(-i H_S t/ħ) acting on (|0>+|1>)/sqrt(2) yields exp(iωt/2)(|0>+exp(-iωt)|1>)/sqrt(2). A SymPy check of iħ dψ/dt - H_S ψ using the full phase returned the zero vector for this solution and a nonzero vector for the opposite relative phase (for nonzero ω). The original session was correct; the first published checkpoint mistakenly reversed the sign and called it a correction. This amendment restores the original convention and does not change the distance calculation. Prior wording remains in Git history.
 
 The Fubini–Study distance is arccos(|cos(ωΔt/2)|). For |ωΔt| ≤ π, it equals ΔE |Δt|/ħ, where ΔE = ħ|ω|/2. This restricted example of established quantum evolution geometry returns to zero after full cycles and does not uniquely count elapsed cycles.
 
