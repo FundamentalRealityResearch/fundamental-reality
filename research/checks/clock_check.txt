@@ -1,0 +1,5 @@
+SymPy 1.14.0
+full: Matrix([[0], [0]])
+ray: Matrix([[sqrt(2)*hbar*omega/4], [sqrt(2)*hbar*omega*exp(-I*omega*t)/4]])
+ray shifted: Matrix([[0], [0]])
+opposite ray projected: Matrix([[sqrt(2)*hbar*omega/2], [-sqrt(2)*hbar*omega*exp(I*omega*t)/2]])
