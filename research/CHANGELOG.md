@@ -1,0 +1,12 @@
+# Research corrections and failed checks
+
+## 2026-11-26 — Relational clock phase and verification audit
+
+- Original Session 2: correct relative phase exp(-iωt) for H_S = -ħω Z/2, with evolution understood up to overall phase.
+- Initial published checkpoint (commit 309012e374f3340fea7f95280418ea23eb61c673): erroneously reversed the sign and described the original as incorrect.
+- Subsequent amendment (commit 1ef0d34600f77cd2068bd2d8a469445dfc497f57): restored the correct sign but the accompanying chat did not clearly distinguish the full vector from its phase-stripped representative. Earlier computational verification claims are not independently reproducible from retained artifacts.
+- Current audit: actually executed [clock_check.py](checks/clock_check.py) using SymPy 1.14.0; [captured output](checks/clock_check.txt). For the full state the residual is zero; for the phase-stripped ray it is (ħω/2) times the ray; using H_S + ħω I/2 gives zero. The opposite relative phase has nonzero orthogonal residual for nonzero ω, so cannot be repaired by a scalar shift.
+- Impact: original physical ray and Fubini–Study distance conclusion remain correct. No novel physics or new prediction. Classification 2: independent check of known physics.
+- Strongest limitation: this is a two-level model with an assumed Hamiltonian and clock structure. It does not derive time or its arrow from first principles. The verification is a symbolic self-check, not independent experimental confirmation.
+
+Future entries must record failed checks and retractions, relevant artifacts, and impact on dependent claims. No deletion of unfavorable results.
