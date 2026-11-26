@@ -10,3 +10,8 @@
 - Strongest limitation: this is a two-level model with an assumed Hamiltonian and clock structure. It does not derive time or its arrow from first principles. The verification is a symbolic self-check, not independent experimental confirmation.
 
 Future entries must record failed checks and retractions, relevant artifacts, and impact on dependent claims. No deletion of unfavorable results.
+
+## 2026-11-26 — Documentation consistency and reproduction
+
+- Removed the stale closing statement in the checkpoint denying any executed test, which contradicted section C.
+- Retrieved the published clock script and output; executed the same code in SymPy 1.14.0 in the chat's Python environment. All printed residuals matched the archived output exactly. This is a self-reproduction, not independent peer review. No change to physical conclusions.
