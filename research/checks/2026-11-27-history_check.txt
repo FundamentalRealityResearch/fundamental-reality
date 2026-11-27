@@ -1,0 +1,8 @@
+SymPy 1.14.0
+history basis indices: [0, 2, 3, 1]
+norm squared: 1
+Hermitian: True
+stationary: True
+reversal stationary: True
+propagator spectrum: {1: 4, 1 - sqrt(2)/2: 4, sqrt(2)/2 + 1: 4, 0: 4}
+boundary-selected kernel dimension: 1
